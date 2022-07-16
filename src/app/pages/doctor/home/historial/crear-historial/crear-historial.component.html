@@ -1,0 +1,67 @@
+<h3 mat-dialog-title>Registro de Historial</h3>
+
+<form class="example-container" [formGroup]="form" #frmPaciente="ngForm" (ngSubmit)="operar()">
+  <h4 class="tittle-Cliente">Registro Cliente</h4>
+  <section>
+    <div [hidden]="true">
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="id_cliente" required formControlName="id_cliente">
+      </mat-form-field>
+  </div>
+
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="dni_cliente" minlength="3" required formControlName="dni_cliente">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="nombre_cliente" required formControlName="nombre_cliente">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="apellido_cliente" required formControlName="apellido_cliente">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="correo_cliente" required formControlName="correo_cliente" >
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="direccion_cliente" required formControlName="direccion_cliente">
+  </mat-form-field>
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="telefono_cliente" required formControlName="telefono_cliente">
+  </mat-form-field>
+  </section>
+
+  <h4 class="tittle-Paciente">Registro Paciente</h4>
+
+  <section>
+    <div [hidden]="true">
+      <mat-form-field class="example-full-width paciente">
+          <input matInput placeholder="id_paciente" required formControlName="id_paciente">
+      </mat-form-field>
+    </div>
+  
+    <mat-form-field class="example-full-width paciente">
+        <input matInput placeholder="nombre_paciente" required formControlName="nombre_paciente">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width paciente">
+        <input matInput placeholder="raza_pacinte" required formControlName="raza_pacinte">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width paciente">
+        <input matInput placeholder="especie_paciente" required formControlName="especie_paciente">
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width paciente">
+        <input matInput placeholder="color_paciente" required formControlName="color_paciente">
+    </mat-form-field>
+  </section>
+
+  <button mat-raised-button color="primary" type="submit">
+      <mat-icon>done</mat-icon>
+      <span>Aceptar</span>
+  </button>
+
+</form>

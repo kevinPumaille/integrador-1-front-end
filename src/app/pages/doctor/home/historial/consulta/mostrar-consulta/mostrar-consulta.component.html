@@ -1,0 +1,38 @@
+<h3 mat-dialog-title>Registro de Consulta</h3>
+
+<form class="example-container" >
+  <section>
+
+  <mat-form-field  class="example-full-width cliente">
+      <input  matInput placeholder="estado_consulta" minlength="3" [value]="estado" [disabled]="true">
+  </mat-form-field>
+
+  <mat-form-field  appearance="fill" class="cliente">
+    <mat-label>Antecedentes</mat-label>
+    <textarea matInput
+              cdkTextareaAutosize
+              [value]="antecedente" [disabled]="true"
+              #autosize="cdkTextareaAutosize"
+              cdkAutosizeMinRows="1"
+              cdkAutosizeMaxRows="5"></textarea>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width cliente" >
+      <input matInput placeholder="examen_consulta" [value]="examen" [disabled]="true">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="diagnostico_consulta" [value]="diagnostico" [disabled]="true">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="edad" [value]="edad" [disabled]="true">
+  </mat-form-field>
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="peso" [value]="peso" [disabled]="true">
+  </mat-form-field> 
+  
+ 
+  </section>
+
+</form>

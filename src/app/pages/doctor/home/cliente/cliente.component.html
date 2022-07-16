@@ -1,0 +1,56 @@
+<h4>Buscar</h4> 
+<form class="example-form">
+<mat-form-field>       
+  <input matInput (keyup)="filter($event)" >
+</mat-form-field>
+</form>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="id_cliente">
+    <th mat-header-cell *matHeaderCellDef>id_cliente</th>
+    <td mat-cell *matCellDef="let element"> {{element.id_cliente}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="dni_cliente">
+    <th mat-header-cell *matHeaderCellDef>dni_cliente</th>
+    <td mat-cell *matCellDef="let element"> {{element.dni_cliente}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="nombre_cliente">
+    <th mat-header-cell *matHeaderCellDef>nombre_cliente</th>
+    <td mat-cell *matCellDef="let element"> {{element.nombre_cliente}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="apellido_cliente">
+    <th mat-header-cell *matHeaderCellDef>apellido_cliente</th>
+    <td mat-cell *matCellDef="let element"> {{element.apellido_cliente}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="correo_cliente">
+    <th mat-header-cell *matHeaderCellDef>correo_cliente</th>
+    <td mat-cell *matCellDef="let element"> {{element.correo_cliente}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="direccion_cliente">
+    <th mat-header-cell *matHeaderCellDef>direccion_cliente</th>
+    <td mat-cell *matCellDef="let element"> {{element.direccion_cliente}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="telefono_cliente">
+    <th mat-header-cell *matHeaderCellDef>telefono_cliente</th>
+    <td mat-cell *matCellDef="let element"> {{element.telefono_cliente}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+  }
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    padding: .3em;  
+    display: inline-block;
+  }
+  
+  .example-full-width {
+    width: 100%;
+    
+  }
+
+  .caja{
+    width: 10px;
+  }
+
+  .btn-cHis{
+    margin-left: .8rem;
+  }
+  h4{
+    display: inline-block;
+    padding: .5rem;
+  }

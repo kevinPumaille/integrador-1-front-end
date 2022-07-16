@@ -1,0 +1,48 @@
+<h3 mat-dialog-title>Registro de Consulta</h3>
+
+<form class="example-container" [formGroup]="form" #frmPaciente="ngForm" (ngSubmit)="operar()">
+  <section>
+    <div [hidden]="true">
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="id_consulta" required formControlName="id_consulta">
+      </mat-form-field>
+  </div>
+
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="estado_consulta" minlength="3" required formControlName="estado_consulta">
+  </mat-form-field>
+
+  <mat-form-field  appearance="fill" class="cliente">
+    <mat-label>Antecedentes</mat-label>
+    <textarea matInput
+              formControlName="antecedente_consulta"
+              cdkTextareaAutosize
+              #autosize="cdkTextareaAutosize"
+              cdkAutosizeMinRows="1"
+              cdkAutosizeMaxRows="5"></textarea>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="examen_consulta" required formControlName="examen_consulta">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="diagnostico_consulta" required formControlName="diagnostico_consulta" >
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="edad" required formControlName="edad">
+  </mat-form-field>
+  <mat-form-field class="example-full-width cliente">
+      <input matInput placeholder="peso" required formControlName="peso">
+  </mat-form-field>
+  
+ 
+  </section>
+
+  <button mat-raised-button color="primary" type="submit">
+      <mat-icon>done</mat-icon>
+      <span>Aceptar</span>
+  </button>
+
+</form>

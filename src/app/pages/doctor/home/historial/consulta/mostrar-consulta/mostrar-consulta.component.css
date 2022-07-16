@@ -1,0 +1,6 @@
+.cliente,.paciente{
+    width: 100%;
+    height: 5rem;
+  
+    display: block;
+}
